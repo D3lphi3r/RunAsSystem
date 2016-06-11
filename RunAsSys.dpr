@@ -3,9 +3,10 @@ program RunAsSys;
 uses
   uSysAccount in 'uSysAccount.pas' {sSysAccount: TService};
 
+{$R *.res}
 
 begin
-     CreateProcessAsSystem( 'c:\windows\system32\cmd.exe');
+     CreateProcessAsSystem('C:\Windows\System32\cmd.exe');
 end.
 
 
